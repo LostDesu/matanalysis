@@ -1,0 +1,30 @@
+\documentclass[a4paper,12pt]{article} 
+\usepackage[T2A]{fontenc}			
+\usepackage[utf8]{inputenc}			
+\usepackage[english,russian]{babel}	
+\usepackage{amsmath,amsfonts,amssymb,amsthm,mathtools} 
+\usepackage{wasysym}
+\usepackage{amsmath}
+\everymath{\displaystyle}
+
+\author{конспект от TheLostDesu}
+\title{Пределы, непрерывность функций}
+\date{\today}
+
+
+\begin{document}
+\maketitle
+\section{Пределы}
+Если последовательность не убывает и ограниченна сверху, то у нее есть предел.\\
+Например последовательность $x_n = (1 + \frac{1}{n})^n$ имеет предел. Он обозначается за $e$\footnote{число Эйлера}. Доказательство: \\
+1. $x_n = (1+\frac{1}{n})^n = 1 + \sum^n_{k=1} (1-\frac{1}{n})(1-\frac{2}{n})...(1-\frac{k-1}{n})*\frac{1}{k!}$\\
+Все скобки меньше еденицы, значит это меньше, чем $1 + \sum^n_{k=1} \frac{1}{k!}$. Что меньше, чем $1 + 1 + \frac{1}{2} + \frac{1}{2^2}+...+\frac{1}{2^{n-1}}$\\ Заметим, что это является геометрической прогрессией. Сложим их по сумме, получим результат меньший, чем $1 + \frac{1}{\frac{1}{2}} = 3$
+2. Теперь надо доказать, что последовательность возрастает. 
+Для этого возьмем n+1й член последовательности, и n-ый.\\
+$1 + \sum^n_{k=1}(1 - \frac{1}{n+1})(1-\frac{2}{n+1}...(1-\frac{k-1}{n+1} * \frac{1}{k!}$
+Каждый член этой суммы больше, чем $1 + \sum^{n+1}_{k=1}(1 - \frac{1}{n})(1-\frac{2}{n}...(1-\frac{k-1}{n} * \frac{1}{k!}$. Значит, что последовательность возрастает.
+\section{Непрерывность функций}
+Назовем дельта-окрестностью точки a $O \delta (a) = \{ x|x-a|< \delta \}$
+Также есть проколотая $\delta$ окрестность точки. Она возникает тогда, когда сама точка не входит в окрестность.
+Точка a является предельной для множества X $\Leftrightarrow \exists x_n  \in X, x_n \neq a:	lim_{n \to \inf} x_n = a$
+\end{document}

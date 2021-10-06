@@ -1,0 +1,32 @@
+\documentclass[a4paper,12pt]{article} 
+\usepackage[T2A]{fontenc}			
+\usepackage[utf8]{inputenc}			
+\usepackage[english,russian]{babel}	
+\usepackage{amsmath,amsfonts,amssymb,amsthm,mathtools} 
+\usepackage{wasysym}
+\usepackage{amsmath}
+\everymath{\displaystyle}
+
+\author{конспект от TheLostDesu}
+\title{Пределы}
+\date{\today}
+
+
+\begin{document}
+\maketitle
+\section{}
+Пусть $f(x) = \frac{x^2-1}{x-1}$. Тогда функция определена на $R$, кроме 1. Но в остальных местах функция принимает вид x+1.\\
+Определим для f(x) $lim_{x \to 1} f(x) = 2$.\\
+Пусть f(x) определена на  $x \in R$. a - предельная точка x. Тогда $lim_{x \to a} f(x) = A$.\\
+Пример 2. f(x) = $sin(\frac{1}{x})$; $x \neq 0$; x = 0 - точка, в которой предела нет. 
+\section{Теорема об арифметических свойствах пределов ф-ий}
+Пусть f(x) и g(x) определены на X. Пусть $lim_{x \to a} f(x) = A; lim_{x \to a} g(x) = B. $\\
+Тогда \\
+1) Предел суммы f и g = A + B.\\
+2) Предел произведения f и g = A * B\\
+3) Предел частного f и g = A/B при B $\neq$ 0\\
+\section{Теорема о пределе зажатой функции}
+Пусть f(x), g(x), h(x) определены на одном и том же множестве. Если пределы в одной и той же точке f(x) и h(x) равны, и g(x) зажата между f(x) и h(x), тогда предел g(x) в этой точке равен пределу f(x) и h(x).
+\section{Первый замечательный предел}
+$lim_{x \to 0} \frac{sin(x)}{x} = 1$
+\end{document}
